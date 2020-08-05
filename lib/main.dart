@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import './views/desktop/desktop_view.dart';
 
@@ -12,7 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Erin Kelsey',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.purple,
+        textTheme: TextTheme(
+          headline1: GoogleFonts.montserrat(fontSize: 40),
+        ),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: DesktopView(),
