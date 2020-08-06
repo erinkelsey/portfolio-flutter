@@ -4,6 +4,7 @@ import 'package:sticky_headers/sticky_headers.dart';
 
 import './views/header/header_view.dart';
 import './widgets/navigation_bar/navigation_bar.dart';
+import './widgets/drawer/main_drawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Panda: The Bear',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
@@ -66,12 +68,12 @@ class _PortfolioViewState extends State<PortfolioView> {
     final width = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      endDrawer: MainDrawer(),
       body: SingleChildScrollView(
         controller: _scrollController,
         child: StickyHeader(
           header: NavigationBar(
             height: height * 0.075,
-            width: width,
             atTopPage: _atTopPage,
           ),
           content: Column(
