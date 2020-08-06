@@ -20,10 +20,11 @@ class NavigationBarMobile extends StatelessWidget {
           SizedBox(
             width: 20,
           ),
-          Text(
-            '🐼',
-            style: TextStyle(fontSize: 26),
-          ),
+          Image.asset(
+              !atTopPage
+                  ? 'images/panda_logo_white.png'
+                  : 'images/panda_logo.png',
+              height: 30),
           Spacer(),
           IconButton(
             icon: Icon(Icons.menu),

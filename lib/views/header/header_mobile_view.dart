@@ -15,7 +15,7 @@ class HeaderMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height * 0.9,
+      height: height * 0.95,
       width: width,
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Column(
@@ -24,8 +24,8 @@ class HeaderMobileView extends StatelessWidget {
             child: Image.asset(
               'images/panda_header.png',
               fit: BoxFit.contain,
-              width: width * 0.8,
-              height: 0.5,
+              width: width * 0.7,
+              height: 0.4,
             ),
           ),
           SizedBox(height: 30),

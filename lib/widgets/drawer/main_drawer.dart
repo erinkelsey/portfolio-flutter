@@ -19,7 +19,7 @@ class MainDrawer extends StatelessWidget {
             children: <Widget>[
               DrawerHeader(
                 child: Text(
-                  'Panda: The Bear - Portfolio',
+                  'Panda: The Bear',
                   style: TextStyle(
                     color: Colors.white,
                   ),

@@ -21,13 +21,11 @@ class NavigationBarDesktop extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20),
       child: Row(
         children: <Widget>[
-          Text(
-            '🐼',
-            style: TextStyle(
-              fontSize: 26,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
+          Image.asset(
+              !atTopPage
+                  ? 'images/panda_logo_white.png'
+                  : 'images/panda_logo.png',
+              height: 30),
           Spacer(),
           for (var item in kNavigationItems)
             NavigationBarItem(

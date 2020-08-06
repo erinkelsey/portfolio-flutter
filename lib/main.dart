@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Panda: The Bear - Portfolio',
+      title: 'Panda: The Bear',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         accentColor: Colors.purple,
@@ -43,7 +43,7 @@ class _PortfolioViewState extends State<PortfolioView> {
   bool _atTopPage;
 
   void _scrollListener() {
-    if (_scrollController.offset <= 350) {
+    if (_scrollController.offset <= 200) {
       setState(() {
         _atTopPage = true;
       });
