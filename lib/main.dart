@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 import './views/header/header_view.dart';
-import './navigation_bar/navigation_bar_view.dart';
+import './widgets/navigation_bar/navigation_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -69,7 +69,7 @@ class _PortfolioViewState extends State<PortfolioView> {
       body: SingleChildScrollView(
         controller: _scrollController,
         child: StickyHeader(
-          header: NavigationBarView(
+          header: NavigationBar(
             height: height * 0.075,
             width: width,
             atTopPage: _atTopPage,

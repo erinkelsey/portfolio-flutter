@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './header_body.dart';
+import '../../widgets/header/header_body.dart';
 
 class HeaderMobileView extends StatelessWidget {
   const HeaderMobileView({
