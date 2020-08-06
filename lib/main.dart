@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Panda: The Bear',
+      title: 'Panda: The Bear - Portfolio',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         accentColor: Colors.purple,

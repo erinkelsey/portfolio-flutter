@@ -25,7 +25,7 @@ class NavigationBarDesktop extends StatelessWidget {
             '🐼',
             style: TextStyle(
               fontSize: 26,
-              fontWeight: FontWeight.w200,
+              fontWeight: FontWeight.w700,
             ),
           ),
           Spacer(),

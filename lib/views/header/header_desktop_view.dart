@@ -27,7 +27,11 @@ class HeaderDesktopView extends StatelessWidget {
               isMobile: false,
             ),
           ),
-          FlutterLogo(size: 300),
+          Image.asset(
+            'images/panda_header.png',
+            fit: BoxFit.contain,
+            width: width * 0.4,
+          ),
         ],
       ),
     );

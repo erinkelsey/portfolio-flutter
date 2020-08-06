@@ -20,8 +20,15 @@ class HeaderMobileView extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
       child: Column(
         children: [
-          FlutterLogo(size: height * 0.3),
-          Spacer(),
+          Expanded(
+            child: Image.asset(
+              'images/panda_header.png',
+              fit: BoxFit.contain,
+              width: width * 0.8,
+              height: 0.5,
+            ),
+          ),
+          SizedBox(height: 30),
           HeaderBody(isMobile: true),
         ],
       ),

@@ -19,6 +19,7 @@ class NavigationBarItem extends StatelessWidget {
           buttonText,
           style: TextStyle(
             fontSize: 15,
+            fontWeight: FontWeight.w300,
             color: !atTopPage ? Colors.white : Colors.black,
           ),
         ),
