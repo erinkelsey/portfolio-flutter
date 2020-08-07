@@ -16,8 +16,7 @@ class HeaderMobileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height * 0.95,
-      width: width,
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+      width: width * 0.9,
       child: Column(
         children: [
           Expanded(
@@ -30,6 +29,7 @@ class HeaderMobileView extends StatelessWidget {
           ),
           SizedBox(height: 30),
           HeaderBody(isMobile: true),
+          SizedBox(height: 30),
         ],
       ),
     );

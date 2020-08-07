@@ -5,6 +5,7 @@ import 'package:sticky_headers/sticky_headers.dart';
 import './views/header/header_view.dart';
 import './widgets/navigation_bar/navigation_bar.dart';
 import './widgets/drawer/main_drawer.dart';
+import './views/projects/projects_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +21,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         accentColor: Colors.purple,
         textTheme: TextTheme(
-          headline1: GoogleFonts.montserrat(fontSize: 40),
+          headline3: GoogleFonts.montserrat(),
+          headline4: GoogleFonts.montserrat(),
+          headline5: GoogleFonts.montserrat(),
+          headline6: GoogleFonts.montserrat(),
+          bodyText1: GoogleFonts.montserrat(),
           button: TextStyle(
             fontSize: 16,
             color: Colors.white,
@@ -79,6 +84,7 @@ class _PortfolioViewState extends State<PortfolioView> {
           content: Column(
             children: [
               HeaderView(height: height, width: width),
+              ProjectsView(height: height, width: width),
               Container(
                   height: height,
                   width: width,

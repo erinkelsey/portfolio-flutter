@@ -16,12 +16,14 @@ class HeaderView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveBuilder(
-      builder: (ctx, size) {
-        if (size.isMobile)
-          return HeaderMobileView(height: height, width: width);
-        return HeaderDesktopView(height: height, width: width);
-      },
+    return Container(
+      child: ResponsiveBuilder(
+        builder: (ctx, size) {
+          if (size.isMobile)
+            return HeaderMobileView(height: height, width: width);
+          return HeaderDesktopView(height: height, width: width);
+        },
+      ),
     );
   }
 }

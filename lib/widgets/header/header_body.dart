@@ -16,12 +16,12 @@ class HeaderBody extends StatelessWidget {
       children: [
         AutoSizeText(
           'I am a Panda',
-          style: Theme.of(context).textTheme.headline1,
+          style: Theme.of(context).textTheme.headline3,
           maxLines: 1,
         ),
         AutoSizeText(
           'Bear < 🐼 >',
-          style: Theme.of(context).textTheme.headline1,
+          style: Theme.of(context).textTheme.headline3,
           maxLines: 1,
         ),
         SizedBox(height: isMobile ? 20 : 37),
