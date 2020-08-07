@@ -10,19 +10,30 @@ class MainDrawer extends StatelessWidget {
       builder: (_, size) {
         if (!size.isMobile) return null;
         return Drawer(
-          // Add a ListView to the drawer. This ensures the user can scroll
-          // through the options in the drawer if there isn't enough vertical
-          // space to fit everything.
           child: ListView(
-            // Important: Remove any padding from the ListView.
             padding: EdgeInsets.zero,
             children: <Widget>[
               DrawerHeader(
-                child: Text(
-                  'Panda: The Bear',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15),
+                      child: Text(
+                        'Panda: The Bear',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    IconButton(
+                      padding: EdgeInsets.zero,
+                      icon: Icon(Icons.close),
+                      onPressed: () => Navigator.pop(context),
+                      color: Colors.white,
+                    ),
+                  ],
                 ),
                 decoration: BoxDecoration(
                   gradient: LinearGradient(

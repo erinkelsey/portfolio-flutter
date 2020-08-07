@@ -16,7 +16,7 @@ class ProjectsDesktopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height * 1.25,
+      height: width < 1100 ? height * 1.25 : height,
       width: width * 0.8,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
