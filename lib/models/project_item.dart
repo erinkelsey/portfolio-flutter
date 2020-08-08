@@ -1,9 +1,17 @@
 import 'package:flutter/foundation.dart';
 
+/// Class for project item details.
 class ProjectItem {
+  /// The image for this project item.
   final String image;
+
+  /// The title of this project item.
   final String title;
+
+  /// The description of the project.
   final String description;
+
+  /// The technologies used to complete the project.
   final List<String> technologies;
 
   ProjectItem({

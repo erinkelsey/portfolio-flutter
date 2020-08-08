@@ -3,6 +3,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../models/project_item.dart';
 
+/// Widget for showing [ProjectItem] details.
 class ProjectsItemBody extends StatelessWidget {
   const ProjectsItemBody({
     Key key,
@@ -10,7 +11,10 @@ class ProjectsItemBody extends StatelessWidget {
     @required this.height,
   }) : super(key: key);
 
+  /// The [ProjectItem] to show for this body.
   final ProjectItem item;
+
+  /// Current height of the screen.
   final double height;
 
   @override

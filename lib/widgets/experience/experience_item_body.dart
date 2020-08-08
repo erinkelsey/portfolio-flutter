@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/experience_item.dart';
 
+/// Widget for showing [ExperienceItem] details.
 class ExperienceItemBody extends StatelessWidget {
   const ExperienceItemBody({
     Key key,

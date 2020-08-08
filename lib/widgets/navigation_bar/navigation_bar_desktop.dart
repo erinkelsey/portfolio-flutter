@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 import './navigation_bar_item.dart';
 import '../../models/navigation_item.dart';
 
+/// Widget for the desktop navigation bar.
 class NavigationBarDesktop extends StatelessWidget {
   NavigationBarDesktop({
     this.height = 60,
     @required this.atTopPage,
   });
 
+  /// Current height of screen.
   final double height;
+
+  /// Whether user is at the top of the page or not.
   final bool atTopPage;
 
   @override

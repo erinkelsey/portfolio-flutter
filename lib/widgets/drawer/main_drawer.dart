@@ -3,6 +3,9 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../models/navigation_item.dart';
 
+/// Main drawer for the page.
+///
+/// Only used for screens that are mobile size.
 class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 
+/// Class for holding experience items.
 class ExperienceItem {
+  /// Company for this experience item.
   final String company;
+
+  /// The duration for this experience item.
   final String timeline;
+
+  /// List of descriptions, describing this experience item.
   final List<String> descriptions;
+
+  /// Color for the border for this experience item.
   final Color color;
 
   ExperienceItem({

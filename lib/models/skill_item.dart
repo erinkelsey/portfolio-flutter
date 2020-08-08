@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+/// Class for skill item details.
 class SkillItem {
+  /// The name of this skill.
   final String text;
+
+  /// The color for the border around the skill item.
   final Color color;
 
   SkillItem(this.text, this.color);

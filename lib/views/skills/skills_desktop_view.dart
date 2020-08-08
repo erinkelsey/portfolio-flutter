@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../../models/skill_item.dart';
 import '../../widgets/skills/skills_item_body.dart';
 
+/// Widget for the showing each [SkillItem] built as [SkillsItemBody]
+/// widget in desktop view.
+///
+/// Must pass in current screen size [height] and [width].
 class SkillsDesktopView extends StatelessWidget {
   const SkillsDesktopView({
     Key key,

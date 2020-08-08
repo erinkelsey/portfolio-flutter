@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../../models/project_item.dart';
 import '../../widgets/projects/projects_item_body.dart';
 
+/// Widget for the showing each [ProjectItem] built as [ProjectsItemBody]
+/// widget in mobile view.
+///
+/// Must pass in current screen size [height] and [width].
 class ProjectsMobileView extends StatelessWidget {
   const ProjectsMobileView({
     Key key,

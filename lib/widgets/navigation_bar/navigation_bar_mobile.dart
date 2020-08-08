@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
+/// Widget for the mobile navigation bar.
 class NavigationBarMobile extends StatelessWidget {
   NavigationBarMobile({
     this.height = 60,
     @required this.atTopPage,
   });
 
+  /// Current height of screen.
   final double height;
+
+  /// Whether user is at the top of the page or not.
   final bool atTopPage;
 
   @override

@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+/// Widget for building an individual [NavigationItem].
+///
+/// Required to pass in the text for the item [buttonText], whether the user
+/// is currently at the top of the page [atTopPage], and the callback function
+/// when a user presses the item [onPressedHandler].
 class NavigationBarItem extends StatelessWidget {
   NavigationBarItem({
     @required this.buttonText,
