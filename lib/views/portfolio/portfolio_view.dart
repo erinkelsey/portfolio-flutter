@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 import 'package:after_layout/after_layout.dart';
@@ -79,7 +81,7 @@ class _PortfolioViewState extends State<PortfolioView> with AfterLayoutMixin {
           controller: _scrollController,
           child: StickyHeader(
             header: NavigationBar(
-              height: height * 0.075,
+              height: max(height * 0.075, 60),
             ),
             content: Center(
               child: Column(

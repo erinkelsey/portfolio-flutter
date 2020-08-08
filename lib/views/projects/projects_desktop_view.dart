@@ -16,7 +16,7 @@ class ProjectsDesktopView extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
 
     return Container(
-      height: width < 1100 ? height * 1.25 : height,
+      // height: width < 1100 ? height * 1.25 : height,
       width: width * 0.8,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,6 +34,7 @@ class ProjectsDesktopView extends StatelessWidget {
                 ),
             ],
           ),
+          SizedBox(height: 60),
         ],
       ),
     );

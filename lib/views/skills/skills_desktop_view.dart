@@ -17,7 +17,7 @@ class SkillsDesktopView extends StatelessWidget {
 
     return Container(
       width: width * 0.8,
-      height: height * 0.45,
+      // height: height * 0.45,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -44,6 +44,7 @@ class SkillsDesktopView extends StatelessWidget {
             ),
             SizedBox(height: 10),
           ],
+          SizedBox(height: 60),
         ],
       ),
     );
