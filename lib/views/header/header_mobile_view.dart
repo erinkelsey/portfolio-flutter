@@ -21,7 +21,7 @@ class HeaderMobileView extends StatelessWidget {
         children: [
           Expanded(
             child: Image.asset(
-              'images/panda_header.png',
+              'assets/images/panda_header.png',
               fit: BoxFit.contain,
               width: width * 0.7,
               height: 0.4,

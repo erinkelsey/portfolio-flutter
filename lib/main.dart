@@ -11,6 +11,8 @@ import './views/projects/projects_desktop_view.dart';
 import './views/projects/projects_mobile_view.dart';
 import './views/skills/skills_desktop_view.dart';
 import './views/skills/skills_mobile_view.dart';
+import './views/experience/experience_desktop_view.dart';
+import './views/experience/experience_mobile_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -78,7 +80,7 @@ class _PortfolioViewState extends State<PortfolioView> {
   void initState() {
     _atTopPage = true;
     _scrollController = ScrollController(
-      initialScrollOffset: 1600,
+      initialScrollOffset: 2000,
     );
     _scrollController.addListener(_scrollListener);
     super.initState();
@@ -111,6 +113,11 @@ class _PortfolioViewState extends State<PortfolioView> {
               MainViewBuilder(
                 mobileView: SkillsMobileView(height: height, width: width),
                 desktopView: SkillsDesktopView(height: height, width: width),
+              ),
+              MainViewBuilder(
+                mobileView: ExperienceMobileView(height: height, width: width),
+                desktopView:
+                    ExperienceDesktopView(height: height, width: width),
               ),
               Container(
                   height: height,

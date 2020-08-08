@@ -26,10 +26,10 @@ class SkillsDesktopView extends StatelessWidget {
             style: Theme.of(context).textTheme.headline3,
           ),
           SizedBox(height: 20),
-          for (var j = 0; j < kSkillItems.length / 4; j++) ...[
+          for (var j = 0; j < skillItems.length / 4; j++) ...[
             Row(
               children: [
-                for (var i = 0; i < kSkillItems.length / 2; i++)
+                for (var i = 0; i < skillItems.length / 2; i++)
                   Expanded(
                     child: Padding(
                       padding: EdgeInsets.only(left: i != 0 ? 8 : 0),
@@ -42,7 +42,7 @@ class SkillsDesktopView extends StatelessWidget {
                   ),
               ],
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 10),
           ],
         ],
       ),

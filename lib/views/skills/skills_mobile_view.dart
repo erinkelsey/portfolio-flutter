@@ -25,7 +25,7 @@ class SkillsMobileView extends StatelessWidget {
             style: Theme.of(context).textTheme.headline3,
           ),
           SizedBox(height: 20),
-          for (var j = 0; j < kSkillItems.length; j++) ...[
+          for (var j = 0; j < skillItems.length; j++) ...[
             SkillsItemBody(
               j: j,
               isMobile: true,

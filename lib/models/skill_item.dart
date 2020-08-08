@@ -7,7 +7,7 @@ class SkillItem {
   SkillItem(this.text, this.color);
 }
 
-final kSkillItems = [
+final skillItems = [
   SkillItem('Eating', Colors.red),
   SkillItem('Climbing', Colors.blue),
   SkillItem('Sleeping', Colors.green),

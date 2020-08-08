@@ -47,7 +47,7 @@ class MainDrawer extends StatelessWidget {
                   ),
                 ),
               ),
-              for (var item in kNavigationItems)
+              for (var item in navigationItems)
                 ListTile(
                   title: Text(
                     item.text,

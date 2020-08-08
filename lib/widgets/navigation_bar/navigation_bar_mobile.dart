@@ -22,8 +22,8 @@ class NavigationBarMobile extends StatelessWidget {
           ),
           Image.asset(
               !atTopPage
-                  ? 'images/panda_logo_white.png'
-                  : 'images/panda_logo.png',
+                  ? 'assets/images/panda_logo_white.png'
+                  : 'assets/images/panda_logo.png',
               height: 30),
           Spacer(),
           IconButton(

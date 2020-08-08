@@ -39,12 +39,12 @@ class SkillsItemBody extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(
           width: 3,
-          color: kSkillItems[_getIndex()].color,
+          color: skillItems[_getIndex()].color,
         ),
         borderRadius: BorderRadius.circular(3),
       ),
       child: Text(
-        kSkillItems[_getIndex()].text,
+        skillItems[_getIndex()].text,
         style: Theme.of(context).textTheme.headline6,
       ),
     );

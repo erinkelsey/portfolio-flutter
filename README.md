@@ -1,16 +1,17 @@
-# portfolio_web
+## About
 
-A new Flutter project.
+A simple, responsive portfolio website using Flutter Web and Dart.
 
-## Getting Started
+Hosted example here: http://panda-portfolio-flutter.s3-website.ca-central-1.amazonaws.com
 
-This project is a starting point for a Flutter application.
+## Install and Setup
 
-A few resources to get you started if this is your first Flutter project:
+You will need Flutter installed, along with a number of dependencies for building and running iOS and Android apps on simulators. You can find the install instructions here: https://flutter.dev/docs/get-started/install
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+To run for web, follow the instructions here: https://flutter.dev/docs/get-started/web
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run
+
+Run on a web browser (if you have installed support for running on web):
+
+    $ flutter run -d chrome

@@ -28,7 +28,7 @@ class ProjectsDesktopView extends StatelessWidget {
           SizedBox(height: 20),
           Row(
             children: <Widget>[
-              for (final item in kProjectItems)
+              for (final item in projectItems)
                 Expanded(
                   child: ProjectsItemBody(item: item, height: height),
                 ),

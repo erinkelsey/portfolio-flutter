@@ -23,11 +23,11 @@ class NavigationBarDesktop extends StatelessWidget {
         children: <Widget>[
           Image.asset(
               !atTopPage
-                  ? 'images/panda_logo_white.png'
-                  : 'images/panda_logo.png',
+                  ? 'assets/images/panda_logo_white.png'
+                  : 'assets/images/panda_logo.png',
               height: 30),
           Spacer(),
-          for (var item in kNavigationItems)
+          for (var item in navigationItems)
             NavigationBarItem(
               atTopPage: atTopPage,
               buttonText: item.text,

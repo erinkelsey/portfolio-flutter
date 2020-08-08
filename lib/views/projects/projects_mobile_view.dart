@@ -24,7 +24,7 @@ class ProjectsMobileView extends StatelessWidget {
             style: Theme.of(context).textTheme.headline3,
           ),
           SizedBox(height: 20),
-          for (final item in kProjectItems)
+          for (final item in projectItems)
             ProjectsItemBody(item: item, height: height),
           SizedBox(height: 40),
         ],

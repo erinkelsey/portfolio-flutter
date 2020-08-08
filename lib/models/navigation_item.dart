@@ -4,9 +4,8 @@ class NavigationItem {
   NavigationItem({this.text});
 }
 
-final kNavigationItems = [
+final navigationItems = [
   NavigationItem(text: 'Projects'),
   NavigationItem(text: 'Skills'),
-  NavigationItem(text: 'About'),
-  NavigationItem(text: 'Blog'),
+  NavigationItem(text: 'Experience'),
 ];

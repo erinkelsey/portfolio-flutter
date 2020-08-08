@@ -28,7 +28,7 @@ class HeaderDesktopView extends StatelessWidget {
             ),
           ),
           Image.asset(
-            'images/panda_header.png',
+            'assets/images/panda_header.png',
             fit: BoxFit.contain,
             width: width * 0.4,
           ),
