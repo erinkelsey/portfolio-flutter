@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import './navigation_bar_item.dart';
 import '../../models/navigation_item.dart';
@@ -7,17 +8,16 @@ import '../../models/navigation_item.dart';
 class NavigationBarDesktop extends StatelessWidget {
   NavigationBarDesktop({
     this.height = 60,
-    @required this.atTopPage,
   });
 
   /// Current height of screen.
   final double height;
 
-  /// Whether user is at the top of the page or not.
-  final bool atTopPage;
-
   @override
   Widget build(BuildContext context) {
+    final navigationItems = context.watch<List<NavigationItem>>();
+    final scrollController = context.watch<ScrollController>();
+    final atTopPage = scrollController.offset <= 200;
     return Container(
       height: height,
       width: double.infinity,
@@ -35,7 +35,13 @@ class NavigationBarDesktop extends StatelessWidget {
             NavigationBarItem(
               atTopPage: atTopPage,
               buttonText: item.text,
-              onPressedHandler: () {},
+              onPressedHandler: () {
+                scrollController.animateTo(
+                  scrollController.offset + item.position - 100,
+                  duration: Duration(milliseconds: 700),
+                  curve: Curves.easeInOut,
+                );
+              },
             ),
         ],
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:provider/provider.dart';
 
 import '../../models/navigation_item.dart';
 
@@ -9,6 +10,8 @@ import '../../models/navigation_item.dart';
 class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final navigationItems = context.watch<List<NavigationItem>>();
+    final scrollController = context.watch<ScrollController>();
     return ResponsiveBuilder(
       builder: (_, size) {
         if (!size.isMobile) return null;
@@ -59,10 +62,15 @@ class MainDrawer extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    // Update the state of the app
-                    // ...
-                    // Then close the drawer
+                    // close drawer
                     Navigator.pop(context);
+
+                    // go to element
+                    scrollController.animateTo(
+                      scrollController.offset + item.position - 80,
+                      duration: Duration(milliseconds: 700),
+                      curve: Curves.easeInOut,
+                    );
                   },
                 ),
             ],
