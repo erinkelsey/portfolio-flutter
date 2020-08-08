@@ -35,7 +35,10 @@ class ExperienceDesktopView extends StatelessWidget {
                     children: [
                       for (var j = 0; j < experienceItems.length / 2; j++)
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.only(
+                            left: i != 0 ? 8 : 0,
+                            bottom: 8,
+                          ),
                           child: ExperienceItemBody(
                             experienceItem: experienceItems[i * 2 + j],
                           ),

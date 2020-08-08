@@ -10,6 +10,7 @@ import '../../views/header/header_view.dart';
 import '../../views/projects/projects_view.dart';
 import '../../views/skills/skills_view.dart';
 import '../../views/experience/experience_view.dart';
+import '../../views/footer/footer_view.dart';
 import '../../models/navigation_item.dart';
 
 /// Widget for the main portfolio page view.
@@ -80,17 +81,16 @@ class _PortfolioViewState extends State<PortfolioView> with AfterLayoutMixin {
             header: NavigationBar(
               height: height * 0.075,
             ),
-            content: Column(
-              children: [
-                HeaderView(),
-                ProjectsView(key: projectsKey),
-                SkillsView(key: skillsKey),
-                ExperienceView(key: experienceKey),
-                Container(
-                    height: height,
-                    width: width,
-                    color: Theme.of(context).primaryColor),
-              ],
+            content: Center(
+              child: Column(
+                children: [
+                  HeaderView(),
+                  ProjectsView(key: projectsKey),
+                  SkillsView(key: skillsKey),
+                  ExperienceView(key: experienceKey),
+                  FooterView(),
+                ],
+              ),
             ),
           ),
         ),

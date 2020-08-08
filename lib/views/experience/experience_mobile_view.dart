@@ -37,7 +37,7 @@ class ExperienceMobileView extends StatelessWidget {
                 ),
             ],
           ),
-          SizedBox(height: 80),
+          SizedBox(height: 50),
         ],
       ),
     );
