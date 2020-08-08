@@ -2,7 +2,9 @@
 
 A simple, responsive portfolio website using Flutter Web and Dart.
 
-Hosted example here: http://panda-portfolio-flutter.s3-website.ca-central-1.amazonaws.com
+Hosted example on AWS S3: http://panda-portfolio-flutter.s3-website.ca-central-1.amazonaws.com
+
+Hosted example on Firebase: https://panda-portfolio-flutter.web.app
 
 ## Install and Setup
 
