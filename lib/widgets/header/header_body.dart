@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 /// Widget for showing header details.
 class HeaderBody extends StatelessWidget {
@@ -39,7 +40,8 @@ class HeaderBody extends StatelessWidget {
             ),
           ),
           color: Theme.of(context).primaryColor,
-          onPressed: () {},
+          onPressed: () => launch(
+              'mailto:panda.thebear@fakeemail.com?subject=Contact%20Panda'),
           child: Padding(
             padding: EdgeInsets.symmetric(
               vertical: isMobile ? 8 : 14,

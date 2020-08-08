@@ -80,8 +80,8 @@ class _PortfolioViewState extends State<PortfolioView> {
   void initState() {
     _atTopPage = true;
     _scrollController = ScrollController(
-      initialScrollOffset: 2000,
-    );
+        // initialScrollOffset: 2000,
+        );
     _scrollController.addListener(_scrollListener);
     super.initState();
   }

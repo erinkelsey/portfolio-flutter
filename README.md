@@ -12,6 +12,6 @@ To run for web, follow the instructions here: https://flutter.dev/docs/get-start
 
 ## Run
 
-Run on a web browser (if you have installed support for running on web):
+Run on a web browser:
 
     $ flutter run -d chrome
