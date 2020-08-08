@@ -10,15 +10,13 @@ import '../../widgets/projects/projects_item_body.dart';
 class ProjectsDesktopView extends StatelessWidget {
   const ProjectsDesktopView({
     Key key,
-    @required this.height,
-    @required this.width,
   }) : super(key: key);
-
-  final double height;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Container(
       height: width < 1100 ? height * 1.25 : height,
       width: width * 0.8,

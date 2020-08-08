@@ -8,15 +8,13 @@ import '../../widgets/header/header_body.dart';
 class HeaderMobileView extends StatelessWidget {
   const HeaderMobileView({
     Key key,
-    @required this.height,
-    @required this.width,
   }) : super(key: key);
-
-  final double height;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Container(
       height: height * 0.95,
       width: width * 0.9,

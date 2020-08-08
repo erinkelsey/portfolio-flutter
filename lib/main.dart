@@ -5,14 +5,10 @@ import 'package:sticky_headers/sticky_headers.dart';
 import './widgets/navigation_bar/navigation_bar.dart';
 import './widgets/drawer/main_drawer.dart';
 import './views/main_view_builder.dart';
-import './views/header/header_desktop_view.dart';
-import './views/header/header_mobile_view.dart';
-import './views/projects/projects_desktop_view.dart';
-import './views/projects/projects_mobile_view.dart';
-import './views/skills/skills_desktop_view.dart';
-import './views/skills/skills_mobile_view.dart';
-import './views/experience/experience_desktop_view.dart';
-import './views/experience/experience_mobile_view.dart';
+import './views/header/header_view.dart';
+import './views/projects/projects_view.dart';
+import './views/skills/skills_view.dart';
+import './views/experience/experience_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -74,6 +70,12 @@ class _PortfolioViewState extends State<PortfolioView> {
     }
   }
 
+  _getPositions(GlobalKey key) {
+    final RenderBox renderBox1 = key.currentContext.findRenderObject();
+    final positionRed = renderBox1.localToGlobal(Offset.zero);
+    print('POSTION of element: $positionRed');
+  }
+
   /// Initialize the [ScrollController] for the [SingleChildScrollView]
   /// to get access to page position in the scroll view.
   @override
@@ -102,23 +104,10 @@ class _PortfolioViewState extends State<PortfolioView> {
           ),
           content: Column(
             children: [
-              MainViewBuilder(
-                mobileView: HeaderMobileView(height: height, width: width),
-                desktopView: HeaderDesktopView(height: height, width: width),
-              ),
-              MainViewBuilder(
-                mobileView: ProjectsMobileView(height: height, width: width),
-                desktopView: ProjectsDesktopView(height: height, width: width),
-              ),
-              MainViewBuilder(
-                mobileView: SkillsMobileView(height: height, width: width),
-                desktopView: SkillsDesktopView(height: height, width: width),
-              ),
-              MainViewBuilder(
-                mobileView: ExperienceMobileView(height: height, width: width),
-                desktopView:
-                    ExperienceDesktopView(height: height, width: width),
-              ),
+              HeaderView(),
+              ProjectsView(),
+              SkillsView(),
+              ExperienceView(),
               Container(
                   height: height,
                   width: width,

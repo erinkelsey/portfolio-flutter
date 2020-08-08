@@ -9,15 +9,12 @@ import '../../widgets/experience/experience_item_body.dart';
 class ExperienceMobileView extends StatelessWidget {
   const ExperienceMobileView({
     Key key,
-    @required this.height,
-    @required this.width,
   }) : super(key: key);
-
-  final double height;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+
     return Container(
       width: width * 0.9,
       child: Column(

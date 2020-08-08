@@ -8,15 +8,13 @@ import '../../widgets/header/header_body.dart';
 class HeaderDesktopView extends StatelessWidget {
   const HeaderDesktopView({
     Key key,
-    @required this.height,
-    @required this.width,
   }) : super(key: key);
-
-  final double height;
-  final double width;
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Container(
       height: height,
       width: width * 0.8,
