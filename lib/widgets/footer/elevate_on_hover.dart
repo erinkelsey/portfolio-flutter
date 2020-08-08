@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Widget for adding animation to an widget
-/// when it is being hovered over.
+/// Widget for adding animation to an widget when it is being hovered over.
 class ElevateOnHover extends StatefulWidget {
   final Widget child;
   const ElevateOnHover({

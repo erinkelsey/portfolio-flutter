@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 /// Widget for showing header details.
 class HeaderBody extends StatelessWidget {
+  /// Track whether screen size is mobile or not.
   final bool isMobile;
   const HeaderBody({
     Key key,

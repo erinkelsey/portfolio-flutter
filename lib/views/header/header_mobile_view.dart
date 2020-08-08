@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../../widgets/header/header_body.dart';
 
 /// Widget for the showing [HeaderBody] in mobile view.
-///
-/// Must pass in current screen size [height] and [width].
 class HeaderMobileView extends StatelessWidget {
   const HeaderMobileView({
     Key key,

@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/social_item.dart';
-// import '../../widgets/footer/hover_extension.dart';
 
+/// Widget for building the mobile view footer section.
 class FooterMobileView extends StatelessWidget {
+  /// Calculate the current year.
   final currentYear = DateTime.now().year;
   @override
   Widget build(BuildContext context) {

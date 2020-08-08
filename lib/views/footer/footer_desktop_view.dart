@@ -4,7 +4,9 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../models/social_item.dart';
 import '../../widgets/footer/hover_extension.dart';
 
+/// Widget for building the desktop footer section.
 class FooterDesktopView extends StatelessWidget {
+  /// Calculate the current year.
   final currentYear = DateTime.now().year;
   @override
   Widget build(BuildContext context) {

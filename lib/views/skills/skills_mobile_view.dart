@@ -5,8 +5,6 @@ import '../../widgets/skills/skills_item_body.dart';
 
 /// Widget for the showing each [SkillItem] built as [SkillsItemBody]
 /// widget in mobile view.
-///
-/// Must pass in current screen size [height] and [width].
 class SkillsMobileView extends StatelessWidget {
   const SkillsMobileView({
     Key key,

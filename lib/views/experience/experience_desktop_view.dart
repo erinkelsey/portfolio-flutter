@@ -3,9 +3,7 @@ import 'package:portfolio_web/models/experience_item.dart';
 
 import '../../widgets/experience/experience_item_body.dart';
 
-/// Widget for the showing all [ExperienceItem]s in desktop view
-///
-/// Must pass in current screen size [height] and [width].
+/// Widget for the showing all [ExperienceItem]s in desktop view.
 class ExperienceDesktopView extends StatelessWidget {
   const ExperienceDesktopView({
     Key key,

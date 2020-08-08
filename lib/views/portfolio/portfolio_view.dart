@@ -44,7 +44,8 @@ class _PortfolioViewState extends State<PortfolioView> with AfterLayoutMixin {
   }
 
   /// Create the [navigationItems] list with all [NavigationItem] objects for
-  /// this app, with the name of each secion, and a unique [GlobalKey] for them.
+  /// this app, with the name of each secion, and a unique [GlobalKey] for them,
+  /// after the first build has completed.
   @override
   void afterFirstLayout(BuildContext context) {
     setState(() {
@@ -59,7 +60,6 @@ class _PortfolioViewState extends State<PortfolioView> with AfterLayoutMixin {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
 
     return MultiProvider(
       providers: [

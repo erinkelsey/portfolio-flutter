@@ -5,8 +5,6 @@ import '../../widgets/projects/projects_item_body.dart';
 
 /// Widget for the showing each [ProjectItem] built as [ProjectsItemBody]
 /// widget in desktop view.
-///
-/// Must pass in current screen size [height] and [width].
 class ProjectsDesktopView extends StatelessWidget {
   const ProjectsDesktopView({
     Key key,

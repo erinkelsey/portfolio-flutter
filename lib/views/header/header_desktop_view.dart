@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../../widgets/header/header_body.dart';
 
 /// Widget for the showing [HeaderBody] in desktop view.
-///
-/// Must pass in current screen size [height] and [width].
 class HeaderDesktopView extends StatelessWidget {
   const HeaderDesktopView({
     Key key,
